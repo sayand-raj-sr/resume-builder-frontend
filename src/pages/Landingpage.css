@@ -1,0 +1,39 @@
+body{
+    overflow-x: hidden; /*prevent horizontal scrolling
+    */
+}
+
+#bg1{
+    background-image: url("https://img.freepik.com/premium-photo/business-meeting-planning-people-teamwork-discussion-workflow-agenda-conference-room-professional-employees-staff-happy-group-with-documents-seminar-workshop-office-company_590464-171762.jpg?w=2000");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    width: 100%;
+    height: 550px;
+}
+#bg2{
+    background-image: url("https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/EyvF0jkPg/videoblocks-multiethnic-group-of-people-in-modern-office-creative-business-team-working-on-project-together-laughing-and-smiling_sahufqz1_thumbnail-1080_01.png");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    width: 100%;
+    height: 450px;
+}
+/*media queries for mobile responsiveness*/
+@media(max-width:768px){
+    .row{
+        flex-direction: column; /*stack columns vertically*/
+    }
+    .col-4, .col-6, .col-3{
+        width: 100%; /*full width for mobile*/
+        margin-bottom: 20px;/*space between stacked elements*/
+    }
+    img{
+        width: 100%;/*responsive image*/
+        height: auto;/*maintain aspect ratio*/
+    }
+
+    h3,h4{
+ font-size: 1.5em;
+    }
+}
